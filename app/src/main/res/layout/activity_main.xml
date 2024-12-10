@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/total_question"
+    android:text="Total Questions"
+    android:layout_centerHorizontal="true"
+    android:textSize="30dp"
+    android:textStyle="bold"/>
+
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/question"
+android:text="This will be the question"
+android:textColor="@color/black"
+android:textSize="18dp"
+android:textStyle="bold"
+android:textAlignment="center"
+android:layout_margin="20dp"
+android:layout_above="@+id/choices_layout"
+    />
+
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/choices_layout"
+android:layout_centerInParent="true"
+android:orientation="vertical">
+
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/true_button"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/gray"
+    android:text="True"
+    android:textSize="18dp"
+    android:textColor="@color/white"/>
+
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/false_button"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/gray"
+    android:text="False"
+    android:textSize="18dp"
+    android:textColor="@color/white"/>
+
+
+
+</LinearLayout>
+
+
+
+<Button
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/submit_button"
+android:text="Submit"
+    android:textSize="18dp"
+android:layout_below="@+id/choices_layout"
+android:layout_marginTop="40dp"
+    android:backgroundTint="@color/gray"
+    />
+
+
+</RelativeLayout>
